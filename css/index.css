@@ -1,0 +1,175 @@
+/*
+Jeff   1/30/2024
+Agile Class Project
+index.css
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 1rem !important;
+    text-rendering: optimizeLegibility;
+    background-image: url('../images/R.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style-type: none;
+}
+
+/*  Main Navbar  */
+.text-info{
+    color: #1D2E27 !important;
+}
+.main-navbar-wrapper{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 80px;
+    padding: 0 !important;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.164);
+    background-color: #fff;
+}
+.main-navbar{
+    max-width: 1360px;
+    width: 100%;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 !important;
+    background-color: #fff;
+ }
+.main-navbar .navbar-brand img{
+   border-radius: 50% !important;
+   width: 40px;
+}
+.main-navbar .navbar-nav{
+    display: flex;
+    gap: 1.5rem;
+    background-color: #fff;
+}
+.main-navbar .navbar-nav *{
+    font-weight: bold !important;
+    font-size: 1rem !important;
+}
+
+.main-navbar .form{
+    display: none !important;
+}
+.main-navbar form input{
+    border: none;
+    background-color: #f7f7f7 !important;
+}
+
+.main-navbar form input::placeholder{
+    font-size: 1rem;
+    color: rgb(51,51,51) !important;
+}
+.main-navbar form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    height: 36px;
+    width: 36px;
+    border: none;
+    background-color: #f7f7f7 !important;
+}
+.main-navbar form button img{
+    width: 22px;
+    height: 22px;
+}
+.main-navbar .signin-and-cart{
+    display: none !important
+}
+.main-navbar .signin-and-cart *{
+    display: flex;
+    align-items: center;
+    font-size: .9rem !important;
+}
+.main-navbar .signin-and-cart li{
+    display: flex;
+    margin: 0 1.3rem !important;
+    padding: 0 .4rem
+}
+.main-navbar .signin-and-cart li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    margin-right: .5rem;
+    border: 2px solid rgb(51,51,51) !important;
+    border-radius: 50%;
+    height: 28px !important;
+    width: 28px;
+}
+.main-navbar .signin-and-cart li div *{
+    margin-bottom: .2rem !important;
+}
+.main-navbar .signin-and-cart li:hover{
+    background-color: #f7f7f7;
+    height: 36px !important;
+    border-radius: 5px;
+}
+
+/*  Page Stuff   */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 2rem auto 0;
+    /* background: rgba(0, 128, 0, 0.63); */
+    background: rgba(255, 255, 200, .8);
+    border: 5px solid #1D2E27;
+    margin: auto;
+    height: 100vh;
+}
+
+.custom-background{
+    background-color: #395350;
+}
+.custom-background *{
+    color: white !important;
+}
+.upload-button, .custom-button{
+    width: 220px;
+    height: 100px;
+    font-size: 30px;
+    color: tan;
+    background-color: #14452F;
+    border-radius: 10px;
+    border: none;
+}
+.upload-button:hover,  .custom-button:hover{
+    background-color: #215c42;
+}
+
+@media only screen and (min-width: 992px) {
+    .main-navbar .form{
+        display: flex !important;
+    }
+    .main-navbar .signin-and-cart{
+        display: flex !important;
+        height: 36px !important
+    }
+}
